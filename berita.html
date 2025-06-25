@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rekomendasi Gadget</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <!-- Tombol Toggle -->
+  <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+  <!-- Sidebar -->
+  <section>
+    <div class="sidebar" id="sidebar">
+      <nav class="nav">
+        <a href="beranda.html"><i class="fas fa-home"></i> BERANDA</a>
+        <a href="rekomendasi.html"><i class="fas fa-thumbs-up"></i> REKOMENDASI</a>
+        <a href="berita.html"><i class="fas fa-newspaper"></i> BERITA</a>
+        <a href="konsultasi.html"><i class="fas fa-comments"></i> KONSULTASI</a>
+      </nav>
+
+      <div class="social-icons">
+        <a
+          href="https://www.instagram.com/drk1_btcn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i
+            class="fab fa-instagram"
+            style="font-size:24px; color:#E1306C; vertical-align: middle;"
+          ></i>
+          Instagram
+        </a>
+        <a
+          href="https://x.com/MhdQadri312428"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i
+            class="fab fa-twitter"
+            style="font-size:24px; color:#1DA1F2; vertical-align: middle;"
+          ></i>
+          Twitter
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <header class="main-header">
+    <h1>Berita Teknologi Terkini</h1>
+  </header>
+  <!-- Berita Section -->
+   <main class="main-content"></main>
+  <section class="hero" id="berita">
+    <p>update pengetahuan mengenai teknologi,dari berita terbaru oleh sumber terpercaya:</p>
+    <ul class="file-list">
+      <li><a href="https://tekno.kompas.com/" target="_blank">📰 Kompas Tekno</a></li>
+      <li><a href="https://inet.detik.com/" target="_blank">📰 DetikINET</a></li>
+      <li><a href="https://www.theverge.com/tech" target="_blank">🌐 The Verge – Tech</a></li>
+    </ul>
+  </section>
+ <!-- Footer -->
+  <footer class="main-footer">
+    <p>&copy; Mhd.Qadri. Semua hak dilindungi.</p>
+  </footer>
+
+  <!-- Script Sidebar -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

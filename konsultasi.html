@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rekomendasi Gadget</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <!-- Tombol Toggle -->
+  <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+  <!-- Sidebar -->
+  <section>
+    <div class="sidebar" id="sidebar">
+      <nav class="nav">
+        <a href="beranda.html"><i class="fas fa-home"></i> BERANDA</a>
+        <a href="rekomendasi.html"><i class="fas fa-thumbs-up"></i> REKOMENDASI</a>
+        <a href="berita.html"><i class="fas fa-newspaper"></i> BERITA</a>
+        <a href="konsultasi.html" class="active"><i class="fas fa-comments"></i> KONSULTASI</a>
+      </nav>
+
+      <div class="social-icons">
+        <a
+          href="https://www.instagram.com/drk1_btcn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i
+            class="fab fa-instagram"
+            style="font-size:24px; color:#E1306C; vertical-align: middle;"
+          ></i>
+          Instagram
+        </a>
+        <a
+          href="https://x.com/MhdQadri312428"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i
+            class="fab fa-twitter"
+            style="font-size:24px; color:#1DA1F2; vertical-align: middle;"
+          ></i>
+          Twitter
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Konsultasi Section -->
+  <section class="hero" id="konsultasi">
+    <header class="main-header">
+      <h1>Konsultasi Gadget</h1>
+    </header>
+    <p>Butuh saran sebelum membeli gadget? Isi formulir konsultasi berikut dan kami akan membantu Anda:</p>
+    
+    <div class="form-instruction">
+      <h3>Petunjuk Pengisian Formulir:</h3>
+      <ol>
+        <li>Isi semua informasi yang diminta dengan lengkap</li>
+        <li>Jelaskan kebutuhan gadget Anda secara detail</li>
+        <li>Sebutkan budget yang Anda miliki</li>
+        <li>Tekan tombol "Kirim" setelah selesai mengisi</li>
+        <li>Kami akan membalas via email dalam 1-2 hari kerja</li>
+      </ol>
+    </div>
+    
+    <!-- Link ke Google Form saja -->
+<div class="google-form-link">
+  <p>
+    Silakan isi formulir konsultasi dengan klik link di bawah ini:
+  </p>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdMSMtt9eTl4drnlsGQ2Mf9sEw0cRG5w0Igu9s7pwsD0qXqWw/viewform?usp=dialog"
+     target="_blank"
+     class="form-link-button">
+    👉 Buka Formulir Konsultasi di Google Forms
+  </a>
+</div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>&copy; Mhd.Qadri. Semua hak dilindungi.</p>
+  </footer>
+
+  <!-- Script Sidebar -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

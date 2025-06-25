@@ -1,0 +1,368 @@
+/* Reset dan dasar */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Tombol Toggle */
+.toggle-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1100;
+  font-size: 24px;
+  padding: 10px 15px;
+  background-color: #1f1f1f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: #1f1f1f;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: left 0.3s ease;
+  z-index: 1050;
+  box-sizing: border-box;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  font-weight: 600;
+  transition: padding-left 0.3s ease, background-color 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #333;
+  padding-left: 10px;
+}
+
+/* Icon margin */
+.nav a i {
+  margin-right: 8px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: purple;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(10) invert(1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+  filter: brightness(0) invert(0.6);
+}
+
+/* Header dengan latar belakang gambar */
+.main-header {
+  position: relative;
+  background-image: url('img/header.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  text-align: center;
+  flex-shrink: 0;
+  color: white;
+  overflow: hidden;
+}
+
+.main-header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.main-header h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+/* Konten utama */
+.main-content {
+  flex: 1;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.hero h1, .hero h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+}
+
+.hero .highlight {
+  color: purple;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+/* Cuan Section */
+.cuan-section {
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  padding: 30px 20px;
+  text-align: center;
+  color: #eee;
+}
+
+.cuan-section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: purple;
+}
+
+.cuan-section p {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Tombol umum */
+.btn {
+  background-color: purple;
+  color: #121212;
+  font-weight: 700;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: purple;
+  color: #ffffff;
+}
+
+/* Footer */
+.main-footer {
+  background-color: #1f1f1f;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+  flex-shrink: 0;
+}
+
+/* Table container */
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* Tabel gadget */
+.gadget-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+}
+
+.gadget-table th,
+.gadget-table td {
+  border: 1px solid #444;
+  padding: 12px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.gadget-table th {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+/* Gambar HP */
+.hp-img {
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .main-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .gadget-table th, .gadget-table td {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .hp-img {
+    width: 80px;
+  }
+}
+/* Berita List */
+.file-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+
+.file-list li {
+  margin: 10px 0;
+}
+
+.file-list a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.file-list a:hover {
+  color: purple;
+}
+
+/* form */
+
+.google-form-link {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.google-form-link p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 0.8rem;
+}
+
+.form-link-button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #4fc3f7;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.form-link-button:hover {
+  background-color: #03a9f4;
+}

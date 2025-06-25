@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gadget Hari Ini</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Tombol Toggle -->
+  <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+  <!-- Sidebar -->
+   <section>
+  <div class="sidebar" id="sidebar">
+   <nav class="nav">
+     <a href="beranda.html"><i class="fas fa-home"></i> BERANDA</a>
+     <a href="rekomendasi.html"><i class="fas fa-thumbs-up"></i> REKOMENDASI</a>
+     <a href="berita.html"><i class="fas fa-newspaper"></i> BERITA</a>
+     <a href="konsultasi.html"><i class="fas fa-comments"></i> KONSULTASI</a>
+   </nav>
+
+
+   <div class="social-icons">
+  <a href="https://www.instagram.com/drk1_btcn" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-instagram" style="font-size:24px; color:#E1306C; vertical-align: middle;"></i> Instagram
+  </a>
+  <a href="https://x.com/MhdQadri312428" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-twitter" style="font-size:24px; color:#1DA1F2; vertical-align: middle;"></i> Twitter
+  </a>
+</div>
+</section>
+
+  <!-- Header -->
+  <header class="main-header">
+    <h1>Gadget Hari Ini!</h1>
+  </header>
+
+  <!-- Konten Utama -->
+  <main class="main-content">
+    <section class="hero">
+      <h1>Selamat Datang di <span class="highlight">Gadget Hari Ini!</span></h1>
+      <p>
+        Laman yang menyediakan kebutuhan Anda terkait informasi terkini, berita, dan layanan konsultasi mengenai dunia gadget. Temukan rekomendasi terbaik dan solusi tepat untuk perangkat Anda.
+      </p>
+    </section>
+
+    <!-- Bagian tambahan cuan modal hp dan internet -->
+    <section class="cuan-section">
+      <h2>Pengen Cuan Modal HP Sama Internet Doang?</h2>
+      <p>Mulai sekarang dengan mudah, cukup klik link di bawah untuk bergabung dan dapatkan penghasilan!</p>
+      <div class="btn-group">
+        <a href="https://app.haha.me/referral/DRIKK-H7NWMU" target="_blank" rel="noopener noreferrer" class="btn">Gabung Haha.me</a>
+        <a href="https://interlinklabs.ai/referral?refCode=804059092876" target="_blank" rel="noopener noreferrer" class="btn">Gabung InterlinkLabs</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>&copy; Mhd.Qadri. Semua hak dilindungi.</p>
+  </footer>
+
+  <!-- Script Toggle Sidebar -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active');
+    }
+  </script>
+  
+</body>
+</html>
